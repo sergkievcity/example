@@ -1,0 +1,635 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test 2 and 3</title>
+  <meta property="og:url" name="url" content="https://flatbellyshake.com/discovery">      
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta charset="utf-8">
+        <!--<base href="https://flatbellyshake.com">-->
+          <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet" type="text/css" />
+  <link href="assets/css/bootstrap.css" rel="stylesheet" />
+  <link href="assets/css/vsl-home.css" rel="stylesheet" />
+  <link href="assets/css/extra.css" rel="stylesheet" />
+      </head>
+<body> 
+ 
+    <div>
+
+  <style>
+    
+ .video-con {
+    border: none;
+}
+       
+.sec-vsl-1 {
+    background-image: url(assets/images/light-background-fade.jpg)!important;
+  }  
+.loading-video{height:100%;position:absolute;top:0;width:100%;left:0;z-index:0;}
+.loading-video-inner{background:url(https://flatbellyshake.com/discovery/images/loading-video.gif) no-repeat center center;background-size:contain;max-width:900px;width:100%;height:100%;margin:0 auto}
+.button-unmute-mobile{background-image:url(https://flatbellyshake.com/discovery/images/sound.png)}
+.button-unmute-pc{background-image:url(https://flatbellyshake.com/discovery/images/click-to-play-sound-new.png?v1.6)!important}
+.button-continue-mobile{background-image:url(https://flatbellyshake.com/discovery/images/video.png)}
+.button-continue-pc{background-image:url(https://flatbellyshake.com/discovery/images/video-cover-play.png?v2.5)!important}
+.button-continue, .button-unmute {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: 25;
+    display: none;
+   /* background-color: rgba(0,0,0,.5);*/
+    cursor: pointer;
+}
+.change-container {
+   /* padding: 20px 30px 30px 30px;*/
+    margin: 0 auto!important;
+}
+.container-limit {
+    max-width: 1000px!important;
+}
+.video-wrapper-desktop {
+    max-height: 100vh;
+    max-width: 177.77vh;
+    margin: auto;
+    min-width: 272px;
+    min-height: 153px;
+}
+
+#cfs
+{ background-image: url(assets/images/click-to-play-sound-new.png?v1.6)!important;
+}
+    
+/*.pulsing{transform:scale(1);animation:pulsing 1s infinite}    */
+@keyframes pulsing{0%{transform:scale(1);box-shadow:0 0 0 0 rgba(0,0,0,.7)}70%{transform:scale(1.034);box-shadow:0 0 0 10px transparent}100%{transform:scale(1);box-shadow:0 0 0 0 transparent}}
+  
+@media only screen and (max-width: 480px){
+.responsive-video { padding-bottom:150%;}
+#cfs {background-image: url(https://flatbellyshake.com/m-discovery/images/click-on-mobile.jpg);}   
+.cov {background-image: url(https://flatbellyshake.com/m-discovery/images/mobile-pause.png);}   
+}   
+</style>
+  <div class="vsl-body-bak">
+    <div id="top-band"></div>
+    <section class="sec-vsl-1">
+      <div class="container">
+        <div class="white-wrapper" id="wh-wrapper-2">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 class="ancient-h1">Ancient Flat Belly Shake <span class="red-font">Melts Off</span> 57 LBs of Fat</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 pad-0-m"> 
+            
+            <div id="desktopvideo">  
+             <div class="video-con">
+              <div class="responsive-video">
+                <div id="loadingVideo" style="display:none;"></div>
+                <div id="cfs" style="display:block;"></div>
+                <div class="cov"></div>
+                <div class="covall"></div>
+                <div id="player"></div>
+              </div>
+		    </div>
+            </div>
+            
+             
+             <div id="mobilevideo"> 
+              <div class="change-container container container-limit m-0">
+                <div class="vid-type video-wrapper-desktop">
+                  <div>
+                    <div class="vb video-border" style="overflow:hidden;">
+                      <div class="loading-video">
+                        <div class="loading-video-inner"></div>
+                      </div>
+                      <div class="button-unmute pulsing button-unmute-pc"></div>
+                      <div class="button-continue pulsing button-continue-pc"></div>
+                      <!--<script src="https://fast.wistia.com/embed/medias/8sis9v25oo.jsonp" async></script> 
+                      <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>-->
+                      <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+                        <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+                          <div class="wistia_embed wistia_async_8sis9v25oo seo=false videoFoam=true" style="height:100%;position:relative;width:100%">&nbsp;</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <script>
+video_id='8sis9v25oo';video_type='desktop';fullscreen_video='1';ld_video_controls='false';
+  ld_image_continue='video-pc.png';
+  ld_image_unmute='sound-pc.png';</script>
+ 
+ </div> 
+  
+  
+  
+              <p class="sound-para"><i class="fas fa-volume-up"></i> Make sure your sound is turned on. Please wait up to 10 seconds for the video to load.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec-vsl-2">
+      <div class="container">
+        <div class="white-wrapper" id="wh-wrapper-2">
+          <div class="row">
+            <div class="col-md-12">
+              <div id="acces">
+                <div class="product-sec" id="first-product-section">
+                  <div class="hidden-lg hidden-md hidden-sm">
+                    <div class="outr-wrp-pro" id="mr-tp">
+                      <div class="bottle-item price-box">
+                        <h2>Best Value</h2>
+                        <h3>180 Day Supply</h3>
+                        <img class="lazy" data-src="assets/images/product-bottles-6.png" class="img-responsive center-block pro-img" alt="img"/>
+                        <div class="price-per-bottle"> <span class="price-large">$49</span> <span class="per-bottle-span">per<br>
+                          bottle</span> </div>
+                        <div class="money-saving"> YOU SAVE $780! </div>
+                        <a href="https://fbshake.pay.clickbank.net/?cbitems=FBSHAKE-006&cbfid=48445&cbskin=33923&vtid=vsl1&cbexit=2306"><img class="lazy" data-src="assets/images/btn.png" class="img-responsive center-block pro-btn" alt="img"/></a>
+                        <div class="price-data"> <s>$1074&nbsp;</s> <span style="font-weight: bold;">$294</span><br>
+                          <span> <b>SHIPPING:&nbsp;<span style="color: rgba(204, 0, 0, 0.8);">FREE</span></b> </span>
+                          <h5 class="pro-Guarantee">365 days Guarantee</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-4 hidden-xs">
+                    <div class="outr-wrp-pro" id="mr-tp">
+                      <div class="bottle-item price-box">
+                        <h2>Basic</h2>
+                        <h3>30 Day Supply</h3>
+                        <img class="lazy" data-src="assets/images/product-bottles-1.png" class="img-responsive center-block pro-img" alt="img"/>
+                        <div class="price-per-bottle"> <span class="price-large">$69</span> <span class="per-bottle-span">per<br>
+                          bottle</span> </div>
+                        <div class="money-saving"> </div>
+                        <a href="https://fbshake.pay.clickbank.net/?cbitems=FBSHAKE-001&cbfid=48445&cbskin=33921&vtid=vsl1&cbexit=2306"><img class="lazy" data-src="assets/images/btn.png" class="img-responsive center-block pro-btn" alt="img"/></a>
+                        <div class="price-data"> <s>$179&nbsp;</s> <span style="font-weight: bold;">$69</span><br>
+                          <span> <b>+ SHIPPING</b> </span>
+                          <h5 class="pro-Guarantee">365 days Guarantee</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-4">
+                    <div class="outr-wrp-pro">
+                      <div class="bottle-item price-box" id="middle-item">
+                        <h2>Popular</h2>
+                        <h3>90 Day Supply</h3>
+                        <img class="lazy" data-src="assets/images/product-bottles-3.png" class="img-responsive center-block pro-img" alt="img"/>
+                        <div class="price-per-bottle"> <span class="price-large">$59</span> <span class="per-bottle-span">per<br>
+                          bottle</span> </div>
+                        <div class="money-saving"> YOU SAVE $360! </div>
+                        <a href="https://fbshake.pay.clickbank.net/?cbitems=FBSHAKE-003&cbfid=48445&cbskin=33922&vtid=vsl1&cbexit=2306"><img class="lazy" data-src="assets/images/btn.png" class="img-responsive center-block pro-btn" alt="img"/></a>
+                        <div class="price-data"> <s>$537&nbsp;</s> <span style="font-weight: bold;">$177</span><br>
+                          <span> <b>SHIPPING:&nbsp;<span style="color: rgba(204, 0, 0, 0.8);">FREE</span></b> </span>
+                          <h5 class="pro-Guarantee">365 days Guarantee</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hidden-lg hidden-md hidden-sm">
+                    <div class="outr-wrp-pro" id="mr-tp">
+                      <div class="bottle-item price-box">
+                        <h2>Basic</h2>
+                        <h3>30 Day Supply</h3>
+                        <img class="lazy" data-src="assets/images/product-bottles-1.png" class="img-responsive center-block pro-img" alt="img"/>
+                        <div class="price-per-bottle"> <span class="price-large">$69</span> <span class="per-bottle-span">per<br>
+                          bottle</span> </div>
+                        <div class="money-saving"> </div>
+                        <a href="https://fbshake.pay.clickbank.net/?cbitems=FBSHAKE-001&cbfid=48445&cbskin=33921&vtid=vsl1&cbexit=2306"><img class="lazy" data-src="assets/images/btn.png" class="img-responsive center-block pro-btn" alt="img"/></a>
+                        <div class="price-data"> <s>$179&nbsp;</s> <span style="font-weight: bold;">$69</span><br>
+                          <span> <b>+ SHIPPING</b> </span>
+                          <h5 class="pro-Guarantee">365 days Guarantee</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-4 hidden-xs">
+                    <div class="outr-wrp-pro" id="mr-tp">
+                      <div class="bottle-item price-box">
+                        <h2>Best Value</h2>
+                        <h3>180 Day Supply</h3>
+                        <img class="lazy" data-src="assets/images/product-bottles-6.png" class="img-responsive center-block pro-img" alt="img"/>
+                        <div class="price-per-bottle"> <span class="price-large">$49</span> <span class="per-bottle-span">per<br>
+                          bottle</span> </div>
+                        <div class="money-saving"> YOU SAVE $780! </div>
+                        <a href="https://fbshake.pay.clickbank.net/?cbitems=FBSHAKE-006&cbfid=48445&cbskin=33923&vtid=vsl1&cbexit=2306"><img class="lazy" data-src="assets/images/btn.png" class="img-responsive center-block pro-btn" alt="img"/></a>
+                        <div class="price-data"> <s>$1074&nbsp;</s> <span style="font-weight: bold;">$294</span><br>
+                          <span> <b>SHIPPING:&nbsp;<span style="color: rgba(204, 0, 0, 0.8);">FREE</span></b> </span>
+                          <h5 class="pro-Guarantee">365 days Guarantee</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="guarrantee">
+                  <div class="col-md-3 col-sm-3 pad-rt-0"> <img class="lazy" data-src="assets/images/grt.png" class="img-responsive guaranteed-img" alt="img" /> </div>
+                  <div class="col-md-9 col-sm-9">
+                    <h4>You have a full 365 days to try it out before deciding.</h4>
+                    <p>That means that today you don’t decide anything. You click on the order button and fill in your details, then decide in 20, 30 or even 60 days if this is worth it.</p>
+                    <p>My aim is to give you at least 5 times the value of what you invested. If you get any less than 5 times the value of what you paid, I don’t want your cash. You’ll get every cent back.</p>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="faq">
+                  <div class="col-md-12">
+                    <h2>Frequently Asked Questions</h2>
+                    <div class="faq-head">
+                      <h3>How fast does Flat Belly Shake burn off fat?</h3>
+                      <p>Flat Belly Shake can burn fat starting as soon as 30 minutes after you take it. It should then take only days to start to see and feel the effects of melting fat from your problem areas. At this time, you may notice you're feeling less hungry.</p>
+                      <p>What makes this powerful shake so different? It's a powder that mixes with water. Science tells us you’ll absorb these powerful nutrients much better than if they were a capsule. The effect will be remarkable.</p>
+                      <p>Remember, while Flat Belly Shake works for almost everyone, we still insist on providing you with a rock-solid satisfaction guarantee for your peace of mind.</p>
+                    </div>
+                    <div class="faq-head">
+                      <h3>How does the guarantee work?</h3>
+                      <p>From the moment you order, Flat Belly Shake is fully guaranteed for a full 365 days or you get every cent back.</p>
+                      <p>That means if you change your mind, decide it’s not for you or if you aren’t anything but completely satisfied by the results you see, even if you’ve used up your order, just contact us through this website and we’ll be glad to refund every cent.</p>
+                    </div>
+                    <div class="faq-head">
+                      <h3>How do I take Flat Belly Shake?</h3>
+                      <p>All you need to do to enjoy the maximum benefits of Flat Belly Shake is mix a single scoop with water or another beverage of your choice, and drink it once a day in the morning.</p>
+                      <p>We provide a small scoop for you along with your order of Flat Belly Shake, so the precise quantity is already measured out for you. All you need to do is mix it and drink it down.</p>
+                      <p>Then you can sit back and enjoy the feeling as the powerful nutrients work their way through your body.</p>
+                    </div>
+                    <div class="faq-head">
+                      <h3>Does Flat Belly Shake have side effects?</h3>
+                      <p>Flat Belly Shake is made of healthy and naturally occurring nutrients with no known side effects.</p>
+                      <p>It’s produced in a lab certified by the FDA, tested for quality and purity and above all safety.</p>
+                      <p>You can relax as you mix up a Flat Belly Shake each morning, safe in the knowledge the nutrients can only be beneficial for your body and brain.</p>
+                    </div>
+                    <div class="faq-head">
+                      <h3>Can everyone take Flat Belly Shake?</h3>
+                      <p>Every adult over 18, man or woman of any age can safely take Flat Belly Shake.</p>
+                      <p>It doesn’t make any difference how much extra weight you’re carrying, if you feel like your age is working against you, or even if you feel like nothing ever works for you.</p>
+                      <p>We understand that there’s every kind of woman or man out there who wants to drop weight and that’s why we made Flat Belly Shake for everyone.</p>
+                      <p>If you have a medical condition, talk to your doctor first to be sure you can take Flat Belly Shake.</p>
+                      <p>Otherwise, no matter your age, sex, size, shape, you can take Flat Belly Shake.</p>
+                    </div>
+                    <div class="faq-head">
+                      <h3>How many bottles should I buy?</h3>
+                      <p>To enjoy the peak benefits of Flat Belly Shake, it’s best to continue taking it for 3, 6 or even 12 months.</p>
+                      <p>Most people we personally know are happy to take Flat Belly Shake every month because quite simply, they feel so full of energy and vitality and are delighted with what they see in the mirror.</p>
+                      <p>With the world's supply chains under pressure and in turmoil, it's important to stock up as much as possible on Flat Belly Shake to ensure that you're covered for as long as possible. Especially because running out of stock is something that could happen at any moment. </p>
+                      <p>We're here to help. That's why we're making sure you enjoy huge discounts when you buy bulk, so you can save yourself hundreds of dollars.</p>
+                    </div>
+                    <div class="faq-head">
+                      <h3>Is Flat Belly Shake available anywhere else?</h3>
+                      <p>Flat Belly Shake is only available right here on this website. It’s not available on Amazon, Ebay or anywhere else at all.</p>
+                      <p>Some vendors have tried to produce cheap imitations of Flat Belly Shake. However, the only place to get the authentic version is right here, when you click on your best option below.</p>
+                    </div>
+                    <div class="faq-head">
+                      <h3>How long will Flat Belly Shake be in stock for?</h3>
+                      <p>Flat Belly Shake contains rare and exotic ingredients that are hard to find. We trust our suppliers but we face a constant battle to keep this potent breakfast shake available.</p>
+                      <p>We cannot guarantee stock beyond the next few days. And while we do everything we can to keep prices down at these super affordable levels, it is becoming increasingly hard for us.</p>
+                      <p>This is why it’s best to get started with Flat Belly Shake now by clicking on your best option below.</p>
+                      <p>If it’s still in stock and available, you’ll be able to fill in your details.</p>
+                    </div>
+                    <div class="faq-head">
+                      <h3>Is this a one-time payment?</h3>
+                      <p>Yes, it is a one-time payment.</p>
+                      <p>There’s no auto-ship or monthly billing involved. No hidden costs. The price you’ll see is the final price.</p>
+                      <p>What’s more, shipping is free when you claim a 3 or 6 pack of Flat Belly Shake.</p>
+                      <p>We prefer to be as open and clear as possible with Flat Belly Shake’s pricing, because we know how important it is with you.</p>
+                    </div>
+                    <div class="faq-head">
+                      <h3>What do I have to do to get Flat Belly Shake?</h3>
+                      <p>To enjoy Flat Belly Shake and begin your new journey to a life full of vitality, energy and happiness, simply click on your best option below. On the next page, enter your details and confirm your order.</p>
+                      <p>Your order will be sent to our friendly warehouse team who will prepare it for you and send you a shipping notification. You can get started with Flat Belly Shake in a few short days.</p>
+                      <p>Click on your best choice to get started right away.</p>
+                      <!----> 
+                      
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="product-sec">
+                  <div class="hidden-lg hidden-md hidden-sm">
+                    <div class="outr-wrp-pro" id="mr-tp">
+                      <div class="bottle-item price-box">
+                        <h2>Best Value</h2>
+                        <h3>180 Day Supply</h3>
+                        <img class="lazy" data-src="assets/images/product-bottles-6.png" class="img-responsive center-block pro-img" alt="img"/>
+                        <div class="price-per-bottle"> <span class="price-large">$49</span> <span class="per-bottle-span">per<br>
+                          bottle</span> </div>
+                        <div class="money-saving"> YOU SAVE $780! </div>
+                        <a href="https://fbshake.pay.clickbank.net/?cbitems=FBSHAKE-006&cbfid=48445&cbskin=33923&vtid=vsl1&cbexit=2306"><img class="lazy" data-src="assets/images/btn.png" class="img-responsive center-block pro-btn" alt="img"/></a>
+                        <div class="price-data"> <s>$1074&nbsp;</s> <span style="font-weight: bold;">$294</span><br>
+                          <span> <b>SHIPPING:&nbsp;<span style="color: rgba(204, 0, 0, 0.8);">FREE</span></b> </span>
+                          <h5 class="pro-Guarantee">365 days Guarantee</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-4 hidden-xs">
+                    <div class="outr-wrp-pro" id="mr-tp">
+                      <div class="bottle-item price-box">
+                        <h2>Basic</h2>
+                        <h3>30 Day Supply</h3>
+                        <img class="lazy" data-src="assets/images/product-bottles-1.png" class="img-responsive center-block pro-img" alt="img"/>
+                        <div class="price-per-bottle"> <span class="price-large">$69</span> <span class="per-bottle-span">per<br>
+                          bottle</span> </div>
+                        <div class="money-saving"> </div>
+                        <a href="https://fbshake.pay.clickbank.net/?cbitems=FBSHAKE-001&cbfid=48445&cbskin=33921&vtid=vsl1&cbexit=2306"><img class="lazy" data-src="assets/images/btn.png" class="img-responsive center-block pro-btn" alt="img"/></a>
+                        <div class="price-data"> <s>$179&nbsp;</s> <span style="font-weight: bold;">$69</span><br>
+                          <span> <b>+ SHIPPING</b> </span>
+                          <h5 class="pro-Guarantee">365 days Guarantee</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-4">
+                    <div class="outr-wrp-pro">
+                      <div class="bottle-item price-box" id="middle-item">
+                        <h2>Popular</h2>
+                        <h3>90 Day Supply</h3>
+                        <img class="lazy" data-src="assets/images/product-bottles-3.png" class="img-responsive center-block pro-img" alt="img"/>
+                        <div class="price-per-bottle"> <span class="price-large">$59</span> <span class="per-bottle-span">per<br>
+                          bottle</span> </div>
+                        <div class="money-saving"> YOU SAVE $360! </div>
+                        <a href="https://fbshake.pay.clickbank.net/?cbitems=FBSHAKE-003&cbfid=48445&cbskin=33922&vtid=vsl1&cbexit=2306"><img class="lazy" data-src="assets/images/btn.png" class="img-responsive center-block pro-btn" alt="img"/></a>
+                        <div class="price-data"> <s>$537&nbsp;</s> <span style="font-weight: bold;">$177</span><br>
+                          <span> <b>SHIPPING:&nbsp;<span style="color: rgba(204, 0, 0, 0.8);">FREE</span></b> </span>
+                          <h5 class="pro-Guarantee">365 days Guarantee</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hidden-lg hidden-md hidden-sm">
+                    <div class="outr-wrp-pro" id="mr-tp">
+                      <div class="bottle-item price-box">
+                        <h2>Basic</h2>
+                        <h3>30 Day Supply</h3>
+                        <img class="lazy" data-src="assets/images/product-bottles-1.png" class="img-responsive center-block pro-img" alt="img"/>
+                        <div class="price-per-bottle"> <span class="price-large">$69</span> <span class="per-bottle-span">per<br>
+                          bottle</span> </div>
+                        <div class="money-saving"> </div>
+                        <a href="https://fbshake.pay.clickbank.net/?cbitems=FBSHAKE-001&cbfid=48445&cbskin=33921&vtid=vsl1&cbexit=2306"><img class="lazy" data-src="assets/images/btn.png" class="img-responsive center-block pro-btn" alt="img"/></a>
+                        <div class="price-data"> <s>$179&nbsp;</s> <span style="font-weight: bold;">$69</span><br>
+                          <span> <b>+ SHIPPING</b> </span>
+                          <h5 class="pro-Guarantee">365 days Guarantee</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-4 hidden-xs">
+                    <div class="outr-wrp-pro" id="mr-tp">
+                      <div class="bottle-item price-box">
+                        <h2>Best Value</h2>
+                        <h3>180 Day Supply</h3>
+                        <img class="lazy" data-src="assets/images/product-bottles-6.png" class="img-responsive center-block pro-img" alt="img"/>
+                        <div class="price-per-bottle"> <span class="price-large">$49</span> <span class="per-bottle-span">per<br>
+                          bottle</span> </div>
+                        <div class="money-saving"> YOU SAVE $780! </div>
+                        <a href="https://fbshake.pay.clickbank.net/?cbitems=FBSHAKE-006&cbfid=48445&cbskin=33923&vtid=vsl1&cbexit=2306"><img class="lazy" data-src="assets/images/btn.png" class="img-responsive center-block pro-btn" alt="img"/></a>
+                        <div class="price-data"> <s>$1074&nbsp;</s> <span style="font-weight: bold;">$294</span><br>
+                          <span> <b>SHIPPING:&nbsp;<span style="color: rgba(204, 0, 0, 0.8);">FREE</span></b> </span>
+                          <h5 class="pro-Guarantee">365 days Guarantee</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </div>
+              <!--access closed-->
+              
+              <div class="prefer-read-link"><!--<a href="txt-1.php" >Prefer To Read — Click Here</a>---></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/jquery.lazy.min.js"></script>
+    <script type="text/javascript" src="assets/js/bounceback.min.js"></script> 
+    <script src="assets/js/scripts.min.js"></script> 
+    <script id="desktopjs" type="text/javascript" src="assets/js/youtube-des.js"></script> 
+    <script id="mobilejs" type="text/javascript" src="assets/js/SLV.min.js"></script> 
+    <script> 
+ var x = window.matchMedia("(max-width: 480px)");      
+ if (x.matches) {
+  $('#desktopjs').remove();
+  $('#desktopvideo').remove();
+  var ctime = 2415000; //40 minutes 15 seconds (2415 seconds)	    
+ }
+  else 
+  { $('#mobilejs').remove();
+  $('#mobilevideo').remove();
+  var ctime = 2205000; //36 minutes 45 seconds (2205 seconds) 
+  }  
+      
+</script> 
+    <script type="text/javascript">
+jQuery(document).ready(function(){
+if(readCookie("timer_93_") == null ){
+createCookie("timer_93_", "1", 7);
+setTimeout(function(){ jQuery('#acces').fadeIn(); }, ctime); 
+}
+else {
+jQuery('#acces').fadeIn();
+}
+// Create cookie
+function createCookie(name, value, days) {
+var expires;
+if (days) {
+var date = new Date();
+date.setTime(date.getTime()+(days*24*60*60*1000));
+expires = "; expires="+date.toGMTString();
+}
+else {
+expires = "";
+}
+document.cookie = name+"="+value+expires+"; path=/";
+}
+// Read cookie
+function readCookie(name) {
+var nameEQ = name + "=";
+var ca = document.cookie.split(';');
+for(var i=0;i < ca.length;i++) {
+var c = ca[i];
+while (c.charAt(0) === ' ') {
+c = c.substring(1,c.length);
+}
+
+if (c.indexOf(nameEQ) === 0) {
+return c.substring(nameEQ.length,c.length);
+}
+}
+return null;
+}
+
+// Erase cookie
+function eraseCookie(name) {
+createCookie(name,"",-1);
+}
+}); 
+
+</script> 
+    <!-- <script src="https://player.vimeo.com/api/player.js"></script> 
+  <script src="/discovery/js/vim-dis-a.js?v2.1"></script> --> 
+  </div>
+</div>
+
+<script src="assets/js/bootstrap.js"></script>
+
+<style>
+.footer-section
+{ /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#083c1e+0,0b903f+29,0b903f+71,083c1e+100 */
+background: #083c1e; /* Old browsers */
+background: -moz-linear-gradient(left,  #083c1e 0%, #0b903f 29%, #0b903f 71%, #083c1e 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #083c1e 0%,#0b903f 29%,#0b903f 71%,#083c1e 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #083c1e 0%,#0b903f 29%,#0b903f 71%,#083c1e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#083c1e', endColorstr='#083c1e',GradientType=1 ); /* IE6-9 */
+border-top:1px solid grey;
+position:relative;
+
+}
+
+.footer-overlay
+{ position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .7;
+  left:0;
+  top:0;
+}
+
+.foot-wrapper {
+    margin: 10px 3% 5px;
+}
+  
+  .foot-wrapper li
+  {list-style-type:none;
+    display:inline;
+  }
+  
+  img{
+    max-width: 100%;
+  }
+.foot-wrapper li a {
+    color: #dddddd;
+	font-family: 'Poppins', sans-serif;
+	font-weight:400;
+	font-size:12px;
+	padding:0 5px;
+  border-right:1px solid #fff;
+}
+
+  .foot-wrapper li:last-child a
+  { border-right:none;
+  }
+  
+p.copyright{
+	color: #dddddd;
+}
+
+p.copy-write{
+	color: #dddddd;
+	font-family: 'Poppins', sans-serif;
+	font-weight:400;
+	font-size:12px;
+	padding:0 5px;
+	margin-top:20px;
+	margin-bottom:15px;
+	
+}
+
+p.copy-txt{
+	color: #dddddd;
+	font-family: 'Poppins', sans-serif;
+	font-weight:400;
+	font-size:12px;
+	padding:0 5px;
+	margin-top:20px;
+	
+}
+
+ .foot-menu
+  { padding-left:0;
+    margin:0;
+  }
+
+  /*
+  .foot-menu li
+  { display:inline-block;
+  }
+  
+  .foot-menu li::after
+  { content: "|";
+float: right;
+color: #fff;
+}
+  
+.foot-menu li:last-child::after {
+display:none;
+}
+  */
+  
+.fda-disclaimer-wrapper p{
+	font-weight:400;
+	font-size:12px;
+	font-family: 'IBM Plex Sans', sans-serif;
+	margin-bottom: 0;
+}
+
+  a.here
+  { text-decoration:underline;
+    padding:0;
+  }
+  
+  
+  @media only screen and (max-width: 480px){
+	
+.foot-wrapper {
+    margin: 0px;
+}
+  .foot-wrapper .col-md-12
+    { padding:0 4px;
+    }
+    
+    
+}
+  
+
+</style>
+
+
+<footer class="footer-section">
+<div class="footer-overlay"></div>  
+  <div class="container">
+    <div class="foot-wrapper">
+      <div class="row">
+        <div class="col-md-12">
+         
+          <p class="copy-write"> Copyright © Lanta Flat Belly Shake. All rights reserved.</p>
+          <ul class="foot-menu">
+<li> <a href="/privacy.php" target="_blank">Privacy</a> </li>
+<li> <a href="/terms-conditions.php" target="_blank" >Terms and Conditions</a> </li>
+<li> <a href="/references.php" target="_blank" >References</a> </li>            
+<li> <a href="/disclaimer.php" target="_blank" >Disclaimer</a> </li>
+<li> <a href="/contact.php" target="_blank" >Contact</a> </li>
+</ul>
+     
+            
+          <p class="copy-txt">The content of this site is for informational purposes only, and is not intended to replace professional medical advice, diagnosis or treatment. Always seek the advice of your doctor or other qualified health care professional about a medical condition, a suspected medical condition, and before starting a diet, exercise, or supplementation program or take or stop a medication.</p>
+          <p class="copy-txt">The use of any information provided by this site and others appearing on the site is solely at your own risk. The site and its contents are provided "as is". ClickBank is the reseller of products on this site. CLICKBANK® is a registered trademark of Click Sales Inc., a Delaware corporation located at 1444 S. Entertainment Ave., Boise Boise, ID 83709, USA and used with permission. The role of ClickBank as a retailer does not constitute an endorsement, endorsement or review of such products or any claim, statement or opinion used in the promotion of such products.</p>
+            
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>  <!-- ClickBank Trust Badge -->
+</body>
+</html>
